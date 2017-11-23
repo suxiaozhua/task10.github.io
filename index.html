@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body scroll="no" style="overflow-x:hidden;">
+  	<!-- 页头与导航 -->
+        <div id="header">
+          <div class="container-fluid header_top">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-6 hidden-sm hidden-xs">
+                <p style="color: #FFF;margin: 0 0 0 20px;line-height: 1.6;">客服热线：010-123-12345</p>
+              </div>
+
+              <div class="col-md-4 col-sm-11 col-xs-11">
+                <div class="topleft">
+                  <a href="#" class="toplefts">&nbsp;登录</a><a href="#" class="toplefts">注册&nbsp;</a>
+                </div>           
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            </div>
+          </div>
+
+          <div class="header_bottom">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" onclick="changecolor()" value="#FFFFF0" id="buttontry" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>                
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li class="active"><a href="./index.html">首页</a></li>
+                  <li><a href="#">在线定制</a></li>
+                  <li><a href="#">标准箱</a></li>
+                  <li><a href="#">品质保证</a></li>
+
+                </ul> 
+              </div>              
+            </div>
+          </div>
+
+        </div>
+<!-- 主体文本区*表格 -->
+  <!-- 进程条 -->
+        <div class="line-circle center">
+            <ul class="box-process list-style">
+                <li class="box-step box-step-0"><span>1.定制纸箱</span></li>
+                <li class="box-step"><span>2.选择数量</span></li>
+                <li class="box-step"><span>3.上传附件</span></li>
+                <li class="box-step"><span>4.确认下单</span></li>
+            </ul>
+        </div>
+  <!-- 表单提示 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1 hidden-sm hidden-xs"></div>
+            <div class="col-md-10 col-sm-12 col-xs-12 listPrompt">
+              <span class="promptImg" style="color:#0000FF;"></span><span>请按照以下步骤来定制您的纸箱</span>
+            </div>
+            <div class="col-md-1 hidden-sm hidden-xs"></div>
+          </div>
+        </div>
+
+  <!-- 表单主体内容 -->
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-1 hidden-sm hidden-xs"></div>
+            <!-- 中间表格区 -->
+            <div class="col-md-10 col-sm-12 col-xs-12 mainForm shiyixia">
+              <!-- 表格*第一行*栏目 -->
+                <div class="row column1">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                   <span class="cell"><img src="./images/box.png" class="img-responsive"></span><span class="cell">选择箱型</span>                    
+                  </div>
+                </div>
+              <!-- 表格*第二行 -->
+                <div class="row column2">
+                  <!-- 表格*第二行*左边 -->
+                  <div class="col-md-9 col-sm-12 col-xs-12 columleft">
+                    <div class="boxname">
+                      <div class="choose">
+                        <label class="radio">对口箱<input type="radio" name="radio" value="1" checked><i></i></label>
+                        <label class="radio">飞机盒<input type="radio" value="2" name="radio"><i></i></label>
+                        <label class="radio">天地盖<input type="radio" value="3" name="radio"><i></i></label>
+                      </div>                     
+                    </div>                    
+                  </div>
+                  <!-- 表格*第二行*右边 -->
+                  <div class="col-md-3 col-sm-12 col-xs-12 columright">
+                        <div class="dropdown normal">
+                            <button class="info-btn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span>查看详情</span>
+                                <div class="down-arrow" ><span class="caret"></span></div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">对口箱就是</a></li>
+                                <li><a href="#">飞机盒就是</a></li>
+                                <li><a href="#">天地盖就是</a></li>
+                            </ul>
+                        </div>
+                  </div>
+                </div>
+
+              <!-- 表格*第三行*栏目 -->
+                <div class="row column1">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                   <span class="cell"><img src="./images/ruler.png" class="img-responsive"></span><span class="cell">确定尺寸</span>                    
+                  </div>
+                </div>
+              <!-- 表格*第四行 -->
+                <div class="row column2">
+                  <!-- 表格*第四行*左边 -->
+                      <div class="col-md-9 col-sm-12 col-xs-12 columleft">
+                                <!-- 外径 -->
+                                <div class="boxname div-inline">
+                                  <div class="choose">
+                                    <label class="radio">外径<input type="radio" name="radio2" value="1"><i></i></label>
+                                  </div>                     
+                                </div>
+                                <div class="rulesname div-inline">
+                                  <label class="box-type box-type1">
+                                      <span>长&nbsp;&nbsp;</span><input type="text" name="type10" class="input-width"><span>&nbsp;&nbsp;mm&nbsp;&nbsp;</span>
+                                  </label>
+                                  <label class="box-type box-type1">
+                                      <span>宽&nbsp;&nbsp;</span><input type="text" name="type10" class="input-width"><span>&nbsp;&nbsp;mm&nbsp;&nbsp;</span>
+                                  </label>
+                                  <label class="box-type box-type1">
+                                      <span>高&nbsp;&nbsp;</span><input type="text" name="type10" class="input-width"><span>&nbsp;&nbsp;mm&nbsp;&nbsp;</span>
+                                  </label>                              
+                                </div><br/>
+                                <!-- 内径 -->
+                                <div class="boxname div-inline">
+                                  <div class="choose">
+                                    <label class="radio">内径<input type="radio" name="radio2" value="1"><i></i></label>
+                                  </div>                     
+                                </div>
+                                <div class="rulesname div-inline">
+                                  <label class="box-type box-type1">
+                                      <span>长&nbsp;&nbsp;</span><input type="text" name="type10" class="input-width"><span>&nbsp;&nbsp;mm&nbsp;&nbsp;</span>
+                                  </label>
+                                  <label class="box-type box-type1">
+                                      <span>宽&nbsp;&nbsp;</span><input type="text" name="type10" class="input-width"><span>&nbsp;&nbsp;mm&nbsp;&nbsp;</span>
+                                  </label>
+                                  <label class="box-type box-type1">
+                                      <span>高&nbsp;&nbsp;</span><input type="text" name="type10" class="input-width"><span>&nbsp;&nbsp;mm&nbsp;&nbsp;</span>
+                                  </label>                              
+                                </div>
+                            </div> 
+                  <!-- 表格*第四行*右边 -->
+                  <div class="col-md-3 col-sm-12 col-xs-12 columright">
+                        <div class="dropdown center">
+                            <button class="info-btn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span>查看详情</span>
+                                <div class="down-arrow" ><span class="caret"></span></div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">内径就是</a></li>
+                                <li><a href="#">外径就是</a></li>
+                                <li><a href="#">测量单位为mm</a></li>
+                            </ul>
+                        </div>
+                  </div>
+                </div>
+<!---->
+              <!-- 表格*第五行*栏目 -->
+                <div class="row column1">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                   <span class="cell"><img src="./images/cut.png" class="img-responsive"></span><span class="cell">选择材质</span>                    
+                  </div>
+                </div>
+              <!-- 表格*第六行 -->
+                <div class="row column2">
+                  <!-- 表格*第六行*左边 -->
+                  <div class="col-md-9 col-sm-12 col-xs-12 columleft">
+                    <div class="boxname">
+                      <div class="choose2">
+                        <label class="radio2">三层A瓦优质<input type="radio" name="data" value="1" checked><i></i></label>
+                        <label class="radio2">三层A瓦优质<input type="radio" value="2" name="data"><i></i></label>
+                        <label class="radio2">三层A瓦优质<input type="radio" value="3" name="data"><i></i></label>
+                        <label class="radio2">三层A瓦优质<input type="radio" value="4" name="data"><i></i></label>
+                      </div>                     
+                    </div>                    
+                  </div>
+                  <!-- 表格*第六行*右边 -->
+                  <div class="col-md-3 col-sm-12 col-xs-12 columright">
+                        <div class="dropdown datum">
+                            <button class="info-btn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span>查看详情</span>
+                                <div class="down-arrow" ><span class="caret"></span></div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">第一层是</a></li>
+                                <li><a href="#">第二层是</a></li>
+                                <li><a href="#">第三层是</a></li>
+                            </ul>
+                        </div>
+                  </div>
+                </div>
+              <!-- 表格*第七行*提交 -->
+                <div class="row column6">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                   <button type="button" class="btn btn-danger">下一步</button>                    
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-1 hidden-sm hidden-xs"></div>
+          </div>
+        </div>
+
+  <!-- 页脚 -->
+  <div class="footer">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-4 footer01">
+        <br/>
+        <br/>
+        <span>51包装网——纸箱包装首选服务平台</span>
+        <br/>
+        <br/>
+        <br/>
+      </div>
+
+      <div class="col-md-3 col-sm-4 footer01">
+        <br/>
+        <span>关于我们&nbsp;&nbsp;配送流程&nbsp;&nbsp;联系我们</span>
+        <br/>
+        <br/>
+        <span>下单指南&nbsp;&nbsp;媒体介绍</span>
+        <br/>
+        <br/>       
+      </div>
+
+      <div class="col-md-2 col-sm-12 footer01 footertt">      
+        <p><br/>TEL:400-000-123<br/>企业QQ：12345678<br/>微信号：123456</p>
+      </div>
+
+      <div class="col-md-1 col-sm-12 footer01 footerimg">
+        <img src="./images/weixin.png" alt="微信二维码" class="img-rounded" width="65" height="75">
+      </div>
+
+    </div>    
+  </div>
+  <div class="footerinfo">
+    <div class="row">   
+      <div class="col-md-12">       
+        <span>Copyright © 北京51包装科技有限公司 | 京ICP备案号13005880号</span>
+      </div>
+    </div>
+  </div>
+
+
+<!-- 函数与script引入 -->        
+    <script>
+      function changecolor()  //定义函数
+          {      
+              var mychar = document.getElementById("buttontry"); //获取要改变颜色的id
+              mychar.style.backgroundColor="#FFFFF0"
+      }
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
